@@ -4,17 +4,18 @@
 #include "../qcom/kalama-mtp-overlay.dts"
 #include "kalama_overlay_common.dtsi"
 #include "salami_overlay_common.dtsi"
-#include "oplus_chg/oplus-chg-23861.dtsi"
-#include "oplus_misc/oplus-misc-23861.dtsi"
+#include "oplus_chg/oplus-chg-23801-v2.dtsi"
+#include "oplus_misc/oplus-misc-23801-v2.dtsi"
 #include "sensor/aston-sensor-23801.dtsi"
 #include "uff_sm8550.dtsi"
 #include "nfc/aston_nfc_sn220.dtsi"
 #include "tp/aston-oplus_tp-23801.dtsi"
 / {
-    model = "Qualcomm Technologies, Inc. Kalama MTP,aston";
+    model = "Qualcomm Technologies, Inc. Kalama MTP,aston-v2";
 
-    oplus,project-id = <23861>;
+    oplus,project-id = <23801>;
     oplus,hw-id = <OPLUS_EVT1 OPLUS_DVT1 OPLUS_PVT1>;
+    oplus,batt_id = <1>;
 };
 
 &tlmm {
@@ -35,7 +36,7 @@
 
   //#ifdef OPLUS_FEATRUE_ESIM
   esim_en_gpio: esim_en_gpio  {
-      pins = "gpio59";
+      pins = "gpio4";
       function = "normal";
       bias-disable; /* NO pull */
       qcom,drive-strength = <2>; /* 2 MA */
