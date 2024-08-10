@@ -40,7 +40,7 @@
 		regulator-max-microvolt = <1056000>;
 		regulator-enable-ramp-delay = <135>;
 		enable-active-high;
-		gpio = <&pm8550vs_c_gpios 4 0>;
+		gpio = <1500 4 0>;
 		pinctrl-names = "default";
 		pinctrl-0 = <&cam_sensor_vdig_aux_default>;
 		//vin-supply = <&S6G>;
