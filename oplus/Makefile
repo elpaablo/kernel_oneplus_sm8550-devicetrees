@@ -28,6 +28,7 @@ OPLUS_KALAMA_BOARDS += \
 		aston-23801-kalama-overlay-T0.dtbo \
 		aston-23861-kalama-overlay-T0.dtbo \
 		aston-23801-kalama-overlay-EVB.dtbo
+#		aston-23801-kalama-overlay-v2.dtbo
 endif
 
 kalama-overlays-dtb-y += $(OPLUS_KALAMA_BOARDS) $(KALAMA_BASE_DTB) $(KALAMA_APQ_BASE_DTB)
